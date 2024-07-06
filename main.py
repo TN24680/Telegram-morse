@@ -1,7 +1,6 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, CallbackContext
 from telegram.ext import filters
-from server import keep_alive
 
 # Define Morse code dictionary
 MORSE_CODE_DICT = {
@@ -70,5 +69,4 @@ def main():
 
 # Run the main function
 if __name__ == '__main__':
-    keep_alive()
     main()
